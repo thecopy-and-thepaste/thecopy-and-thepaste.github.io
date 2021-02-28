@@ -1,3 +1,218 @@
-<h1>
-    Someone is building something here?
-</h1>
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>thecopy and thepaste</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/control.css" />
+    <link rel="stylesheet" href="css/pages/index.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jQWCloud.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script> -->
+
+    <!-- <script src="providers/config.js"></script>
+	<script src="providers/usr.js"></script> -->
+    <script src="js/moment.min.js"></script>
+
+    <link href="css/toastr.css" rel="stylesheet" />
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body class="is-preload">
+    <!-- Overlay -->
+    <div id="overlay">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="index.html">TheCopy_and_ThePaste</a></h1>
+            <nav class="main">
+                <ul>
+                    <li class="menu">
+                        <a class="fa-bars" href="#menu">Menu</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+        <section id="menu">
+            <!-- Search -->
+            <!-- <section>
+				<form class="search" method="get" action="#">
+					<input type="text" name="query" placeholder="Search" />
+				</form>
+			</section> -->
+
+            <!-- Links -->
+            <section>
+                <ul class="links">
+                    <!-- <li>
+                        <a href="series.html">
+                            <h3>Series</h3>
+                            <p>Check all related series</p>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="about.html">
+                            <h3>About</h3>
+                            <p>some stuff about this</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+        </section>
+
+        <!-- Main -->
+        <div>
+            <div class="post tags_container">
+                <div class="tag_container temp hide">
+                    <p class="tags_type"></p>
+                    <ul class="tags">
+                        <li class="tag temp hide"><a class="tag_text">Recent posts</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Post -->
+            <div id="main">
+                <article class="post temp hide">
+                    <header>
+                        <div class="title">
+                            <div>
+                                <h2 class="post_title"><a href="post.html"></a></h2>
+                                <p class="text_right"><time class="published date_creation" datetime=""></time></p>
+                                <p><b>Series:</b> <span class="post_series"></span> &nbsp;<b>Part:</b><span
+                                        class="post_seriesnumber"></span></p>
+                            </div>
+                            <!-- <div class="post_summary">
+
+							</div> -->
+                        </div>
+
+                    </header>
+                    <a class="image featured"><img class="post_cover" alt="" /></a>
+                    <p>
+                    <div class="post_content">
+
+                    </div>
+                    </p>
+                    <footer>
+                        <ul class="actions ">
+                            <li><a class="button large readPost">Continue Reading</a></li>
+                        </ul>
+                        <ul class="stats">
+                            <li class="post_tags"></li>
+                            <!--	<li><a href="#" class="icon solid fa-heart">28</a></li>
+							<li><a href="#" class="icon solid fa-comment">128</a></li>-->
+                        </ul>
+                    </footer>
+                </article>
+
+
+            </div>
+            <div id="load_banner">
+                <div class="all_load hide">
+                    <h2>All for now</h2>
+                </div>
+                <div>
+                    <div class="lds-ellipsis wait_banner hide">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Sidebar -->
+        <section id="sidebar">
+            <!-- Intro -->
+            <section id="intro">
+                <header>
+                    <h2 style="text-align: right;">TheCopy and ThePaste</h2>
+
+                    <p>A place where you can copy and paste all I copy and paste from somewhere else</p>
+                </header>
+            </section>
+
+            <!-- About -->
+            <section class="blurb">
+
+                <h2>About</h2>
+                <div class="meta">
+                    <a href="about.html" class="author"><span class="name">thecopy_and_thepaste</span><img
+                            src="images/avatar.jpg" alt="" /></a>
+                </div>
+                <div>
+                    
+                    <p>Here, you can find easy and short entries of ML/AI and general topics of information
+                        technologies.
+                    </p>
+
+                    <p>The main focus is to keep them short, you can have the complete code in the proper <a
+                            href="https://github.com/thecopy-and-thepaste">github repo</a>.
+                        So, you will not waste more than 10 mins reading a post.</p>
+
+                    <!-- <p>Every comment is pretty helpful for me. So be free to comment.</p> -->
+                </div>
+
+                <ul class="actions pagination">
+                    <li class="w100"><a href="about.html" class="button large w100">More about it</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Popular tags</h2>
+                <div>
+                    <div id="wordCloud"></div>
+                </div>
+
+            </section>
+
+            <!-- Footer -->
+            <section id="footer">
+                <ul class="icons">
+                    <!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>-->
+                    <li><a href="https://github.com/thecopy-and-thepaste" class="solid fab fa-github"><span class="label">Email</span></a></li>
+                </ul>
+                <p class="copyright">All credits for the design of this website to <a href="http://html5up.net">HTML5 UP.</a></p>
+            </section>
+        </section>
+
+    </div>
+    <!-- Scripts -->
+
+    <script src="js/browser.min.js"></script>
+    <script src="js/breakpoints.min.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <!-- <script src="providers/post.js"></script>
+	<script src="providers/facets.js"></script>-->
+    <script src="js/pages/index.js"></script>
+
+    <script src="js/toastr.js"></script>
+</body>
+
+</html>

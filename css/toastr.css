@@ -1,0 +1,31 @@
+#toast-container>.toast {
+    background: #0089e0 !important;
+    border-radius:5px;
+    height: 4em;
+}
+
+#toast-container>.toast:before {
+    position: fixed;
+    font-family: inherit;
+    font-size: 10px;
+    line-height: 10px;
+    float: left;
+    color: #FFF;
+    padding-right: 0.5em;
+    margin: auto 0.5em auto -1.5em;
+}
+
+.toast>.btn {
+    bottom: 0;
+    padding: 0.5em;
+    margin: 0.4em;
+    background-color: white;
+    height: 2em;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 600px) {
+	#toast-container>.toast {
+        height: 6em;
+    }
+}

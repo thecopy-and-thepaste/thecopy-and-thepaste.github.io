@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>thecopy and thepaste</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/control.css" />
+	<link rel="stylesheet" href="css/pages/index.css" />
+
+	<style>
+		.tuto {
+			text-align: justify;
+		}
+
+		code {
+			font-size: 1.1em;
+
+			white-space: pre-line;
+		}
+
+		.slogan {
+			font-weight: bold;
+			font-size: 0.8em;
+		}
+
+		.tuto>.note {
+			text-align: right;
+			font-family: "Courier New";
+			font-size: 0.9em;
+			font-weight: bold;
+		}
+
+		.tuto>img {
+			margin: 0 auto;
+			display: block;
+			max-width: 400px;
+			width: 40% !important;
+			height: auto !important;
+		}
+	</style>
+
+	<script src="js/jquery.min.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script> -->
+
+	<!-- <script src="providers/usr.js"></script> -->
+</head>
+
+<body class="single is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="index.html">TheCopy_and_ThePaste</a></h1>
+			<nav class="main">
+				<ul>
+					<li class="menu">
+						<a class="fa-bars" href="#menu">Menu</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<section id="menu">
+			<!-- Search -->
+			<!-- <section>
+				<form class="search" method="get" action="#">
+					<input type="text" name="query" placeholder="Search" />
+				</form>
+			</section> -->
+
+			<!-- Links -->
+			<section>
+				<ul class="links">
+					<li>
+						<a href="about.html">
+							<h3>About</h3>
+							<p>something about this</p>
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<!-- Actions -->
+			<section>
+				<div class="usr_sign">
+					<div class="g-signin2" data-onsuccess="onSignIn"></div>
+				</div>
+			</section>
+
+		</section>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<article class="post">
+				<header>
+					<div class="title">
+						<h2><a href="#">About this</a></h2>
+
+						<p class="slogan">A place where you can copy and paste all I copy and paste from somewhere else
+						</p>
+					</div>
+					<div class="meta">
+						<a href="#" class="author"><span class="name">TheCopy and ThePaste</span><img
+								src="images/avatar.jpg" alt="" /></a>
+
+					</div>
+				</header>
+
+				<div class="tuto">
+					<p>TheCopy and ThePaste is an entry-level space to share ideas, it's intended to place simple
+						experiments/examples, or maybe just thoughts, related to ML/AI and general information
+						technologies. The main purpose is to spread some concepts and apply them to the real-world.</p>
+
+					<img src="images/legacy.png">
+					<br>
+					<p class="note">I do not own the rights of this image</p>
+
+					<p>I try to be updated and to provide modern solutions for the tasks proposed. So, I care about the
+						depiction of the solutions here will use recent technologies (at least by the time they were
+						written).</p>
+
+					<p>I understand that your time is so important, and you don't want to waste it. Therefore, most of
+						the entries won't take you away from more than 10 mins. Also, they contain all the code
+						necessary to reproduce them. Nonetheless, if it's so extensive, I'll address to highlight the
+						important stuff and refer you to the source code.</p>
+
+					<p>So, please, if you're interested in any post, I encourage you to fork/clone the repository from
+						the GitHub → [<a href="https://github.com/thecopy-and-thepaste">thecopy-and-thepaste</a>].</p>
+
+					<p>All in all, I appreciate you giving me some time. And thanks for coming here.</p>
+				</div>
+
+			</article>
+
+			<h1>Setting up the environment</h1>
+			<div>
+				I recommend two options to quickly set up your environment: <b>virtual environment (venv) and through
+					docker images</b>.
+				<br><br>
+			</div>
+
+			<!-- Virtual environment -->
+			<article class="post">
+				<header>
+					<div class="title">
+						<h3><a href="#venv">Virtual environment</a></h3>
+					</div>
+				</header>
+
+				<div class="tuto">
+					<p>Consider using a <a href="https://docs.python.org/3/library/venv.html">[venv]</a> to keep your
+						system unmodified (sometimes you will have to install many
+						packages with pip or conda). By using a venv, all dependencies will be isolated inside of this
+						environment.</p>
+
+					<p>To create a virtual environment, you can do as follows:</p>
+					<!-- HTML generated using hilite.me -->
+					<div
+						style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .2em;padding:.2em .6em; text-align: justify">
+						<pre style="margin: 0; line-height: 125%;font-weight: bold;">
+python3 -m venv path/to/virtual/environment
+						</pre>
+					</div>
+
+					<p>Then, activate it and install the dependencies, with:</p>
+					<!-- HTML generated using hilite.me -->
+					<div
+						style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .2em;padding:.2em .6em; text-align: justify">
+						<pre style="margin: 0; line-height: 125%;font-weight: bold;">
+source path/to/virtual/environment/bin/activate
+pip install -r requirements.txt
+						</pre>
+					</div>
+				</div>
+
+			</article>
+
+			<!-- docker -->
+			<article class="post">
+				<header>
+					<div class="title">
+						<h3><a href="#docker">Docker</a></h3>
+					</div>
+				</header>
+
+				<div class="tuto">
+					<p> <a href="https://www.docker.com/products/docker-desktop">[Docker]</a> is a platform that offers
+						you a set of tools to isolate a software unit. It can be an app developed by yourself or an
+						environment to test something. It
+						works based on containers that can package all the resources needed for a specific
+						task.</p>
+					<p>In some entries, Docker is used to building the complete environment within dependencies.</p>
+
+					<p>You can download/install Docker Engine for your SO in the
+						<a href="https://docs.docker.com/engine/install/">[following link]</a>.
+					</p>
+
+					<p>Besides, I encourage you to download/install <a
+							href="https://docs.docker.com/compose/install">[docker-compose]</a>, which lets you create
+						and configure
+						a complete environment using YAML. It's also useful when multiple containers need to interact
+						together.</p>
+
+					<p>
+						One of the drawbacks of Docker is that you need "to enter" to the container to modify something.
+						You can achieve this with:
+					</p>
+					<!-- HTML generated using hilite.me -->
+					<div
+						style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .2em;padding:.2em .6em; text-align: justify">
+						<pre style="margin: 0; line-height: 125%;font-weight: bold;">
+docker exec [container] [entrypoint]
+						</pre>
+					</div>
+
+					<p>To mitigate it, I recommend sharing the <code>code</code> directory with the host. </p>
+
+					<p>So, a workaround you'll see here is a docker-compose file that already shares it. A common
+						template is the following:</p>
+					<!-- HTML generated using hilite.me -->
+					<div
+						style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .2em;padding:.2em .6em; text-align: justify">
+						<pre style="margin: 0; line-height: 125%;font-weight: bold;">
+version: <span style="background-color: #fff0f0">&#39;2&#39;</span>
+
+services: 
+name_of_service:
+	container_name: name_of_container
+	build: 
+	context: image_to_build
+	ports:
+	  - container_port:host_port
+	volumes:
+	  - ./code:/lib/code_environment/code
+	entrypoint: entry_point
+	tty: true
+						</pre>
+					</div>
+					<p>Note the volume sharing in:</p>
+					<!-- HTML generated using hilite.me -->
+					<div
+						style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .2em;padding:.2em .6em; text-align: justify">
+						<pre style="margin: 0; line-height: 125%;font-weight: bold;">
+volumes:
+  - ./code:/lib/code_environment/code
+						</pre>
+					</div>
+					<br>
+
+				</div>
+
+			</article>
+
+			<article class="post">
+				<header>
+					<div class="title">
+						<h3><a href="#notebooks">Jupyter notebook/Jupyter lab</a></h3>
+					</div>
+				</header>
+
+				<div class="tuto">
+					<p>Finally, to show more interactively some steps, and for a better depiction of the results
+						obtained.
+						I rely on using <a href="https://jupyter.org/">[Jupyter notebook/lab]</a>, which is a web
+						application to create documents and add some
+						markdown/code blocks.</p>
+
+					<h3>For virtual environment and docker image</h3>
+					<br>
+
+					<p>To install it, with your virtualenv activated or inside you Docker container, use:</p>
+					<!-- HTML generated using hilite.me -->
+					<div
+						style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .2em;padding:.2em .6em; text-align: justify">
+						<pre style="margin: 0; line-height: 125%;font-weight: bold;">
+pip install jupyterlab
+						</pre>
+					</div>
+
+					<p>Then, to activate it:</p>
+					<!-- HTML generated using hilite.me -->
+					<div
+						style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .2em;padding:.2em .6em; text-align: justify">
+						<pre style="margin: 0; line-height: 125%;font-weight: bold;">
+jupyterlab --ip=0.0.0.0 --port 9000
+						</pre>
+					</div>
+					<br>
+
+					<p><i>By default, <b>if no port is set</b>, it will start in port 8888.</i></p>
+
+					<p>It will start the jupyter server using as a base path the working directory.</p>
+
+					<h3>Using docker-compose</h3>
+					<br>
+					<p>For this scenario, you don't have to modify anything. Each <code>docker-compose</code> file, will
+						be based on a <b>Jupyter ready image</b>.I'll only add it as an entry point. With:</p>
+					<!-- HTML generated using hilite.me -->
+					<div
+						style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .2em;padding:.2em .6em; text-align: justify">
+						<pre style="margin: 0; line-height: 125%;font-weight: bold;">
+entrypoint: jupyter notebook --ip=0.0.0.0 --allow-root
+							</pre>
+					</div>
+				</div>
+			</article>
+
+
+
+			<article class="post">
+				<header>
+					<div class="title">
+						<h3><a href="#final_notes">Final notes</a></h3>
+					</div>
+				</header>
+
+				<div class="tuto">
+
+					<p> It’s possible that some entries need a specific scenario, but don’t worry I care about it won’t
+						be like dragging a dead deer up a hill.</p>
+
+					<p>On the other hand, some entries just won't need any "tailored" dependency. So, I provide the link to the proper <a href="https://colab.research.google.com">[Google colab]</a> notebook.</p>
+				</div>
+
+			</article>
+		</div>
+
+		<!-- Footer -->
+		<section id="footer">
+			<!-- <ul class="icons">
+				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+				<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+			</ul> -->
+			<p class="copyright">All credits for the design of this website to <a href="http://html5up.net">HTML5
+					UP.</a></p>
+		</section>
+
+	</div>
+
+	<!-- Scripts -->
+	<!-- <script src="providers/config.js"></script> -->
+
+	<script src="js/browser.min.js"></script>
+	<script src="js/breakpoints.min.js"></script>
+	<script src="js/util.js"></script>
+	<script src="js/main.js"></script>
+
+	<script src="js/pages/about.js"></script>
+
+</body>
+
+</html>
