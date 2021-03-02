@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>thecopy and thepaste</title>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/control.css" />
+    <link rel="stylesheet" href="css/pages/post.css" />
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <!-- <script src="providers/usr.js"></script> -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script> -->
+</head>
+
+<body class="single is-preload">
+
+    <!-- Overlay -->
+    <div id="overlay">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="index.html">TheCopy and ThePaste</a></h1>
+            <nav class="main">
+                <ul>
+                    <li class="menu usr_container hide">
+                        <img id="usr_image" class="usr_image" src="images/login.png" alt="" />
+                    </li>
+                    <li class="menu">
+                        <a class="fa-bars" href="#menu">Menu</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+        <section id="menu">
+            <!-- Search -->
+            <!-- <section>
+				<form class="search" method="get" action="#">
+					<input type="text" name="query" placeholder="Search" />
+				</form>
+			</section> -->
+
+            <!-- Links -->
+            <section>
+                <ul class="links">
+                    <!-- <li>
+                        <a href="series.html">
+                            <h3>Series</h3>
+                            <p>Check all related series</p>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="about.html">
+                            <h3>About</h3>
+                            <p>something about this</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Actions -->
+            <section>
+                <div class="usr_sign">
+                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                </div>
+            </section>
+
+        </section>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Post -->
+            <article class="post hide">
+                <header class="post_header">
+                    <div class="title">
+
+                        <h2 class="post_title"></h2>
+
+                        <div>
+                            [<a href="" class="post_series"></a>] series - Part <span class="post_series_num"></span>
+                        </div>
+                        <footer>
+                            <div class="name post_tags"></div>
+                        </footer>
+                    </div>
+                    <div class="meta">
+                        <time class="published date_creation" datetime=""></time>
+                        <a href="about.html" class="author"><span class="name">TheCopy and ThePaste</span><img
+                                src="images/avatar.jpg" alt="" /></a>
+                        <p>Where you can copy and paste I copy and paste from somewhere else</p>
+                    </div>
+
+                </header>
+
+                <!-- <div class="summary">
+					<h2>Summary</h2>
+					<p class="post_summary"></p>
+				</div> -->
+                <!-- <hr> -->
+                <div>
+                    <!-- <h2>Content</h2> -->
+                    <div class="post_content">
+                    </div>
+                </div>
+
+
+            </article>
+
+            <article class="post ">
+                <div class="my_comment">
+                    <div class="usr_available hide">
+                        <textarea class="usr_comment"></textarea>
+                        <div class="comment_reply_container">
+                            <a class="button small comment_post">Comment this post</a>
+                            <div class="lds-ellipsis wait_banner wait_post">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="usr_not_available hide">
+                        <p class="info">Sorry, please login to comment this post.</p>
+                    </div>
+
+                </div>
+                <div id="comments_container">
+                    <div class="post_comment temp hide">
+                        <div>
+                            <p class="comment_content"></p>
+                            <div>
+                                <p class="comment_usr"></p>
+                                <p class="comment_timestamp"></p>
+                            </div>
+                        </div>
+                        <hr class="comment_sep">
+                        <div>
+                            <ul class="replies_container">
+                                <li class="comment_reply temp hide">
+                                    <div>
+                                        <p class="reply reply_content"></p>
+                                        <p class="reply reply_usr"></p>
+                                        <p class="reply reply_timestamp"></p>
+                                        <hr class="comment_sep">
+                                    </div>
+
+                                </li>
+                            </ul>
+                            <div class="reply_container hide">
+                                <textarea class="usr_comment hide"></textarea>
+                                <div class="comment_reply_container usr_available hide">
+                                    <a class="button small reply_comment">Reply</a>
+                                    <a class="button small cancel_reply hide">Cancel</a>
+                                    <div class="lds-ellipsis wait_banner wait_post">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="usr_not_available hide">
+                                    <p class="info">Sorry, please login to reply this comment.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <ul class="stats">
+                        <!-- <li><a class="icon solid fa-heart"></a></li> -->
+                        <li><a class="icon solid fa-comment total_comments"></a></li>
+                    </ul>
+                </footer>
+            </article>
+        </div>
+
+
+
+        <!-- Footer -->
+        <section id="footer">
+            <!-- <ul class="icons">
+				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+				<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+			</ul> -->
+            <p class="copyright">All credits for the design of this website to <a href="http://html5up.net">HTML5
+                    UP.</a></p>
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/browser.min.js"></script>
+    <script src="js/breakpoints.min.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- <script src="providers/config.js"></script>
+    <script src="providers/post.js"></script>
+    <script src="providers/comments.js"></script> -->
+    <script src="js/pages/post.js"></script>
+</body>
+
+</html>
