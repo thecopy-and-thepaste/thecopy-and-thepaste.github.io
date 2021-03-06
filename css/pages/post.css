@@ -1,6 +1,31 @@
 article{
 	border: solid;
 }
+
+#main {
+	margin: 0 auto;
+	margin-top: 15vh;
+	width: 95%;
+}
+
+.mask {
+	width: 100%;
+	height: 15vh;
+	float: left;
+}
+
+.mask_background {
+	width: 100%;
+	height: 200%;
+	background-position: center;
+	background-size: 100%;
+}
+
+.post{
+	width: calc(100%);
+	left: 0;
+}
+
 .post_content {
 	overflow-wrap: break-word;
 }
@@ -126,7 +151,7 @@ ul {
 }
 
 .title, .meta{
-	backdrop-filter: blur(6px);
+	/* backdrop-filter: blur(6px); */
 	font-weight: bold;
 	padding: 4em !important;	
 }
@@ -147,6 +172,12 @@ ul {
 }
 
 @media screen and (max-width: 980px) {
+	.post {
+		border-left: 0;
+		border-right: 0;
+
+	}
+
 	.post>header{
 		padding: 0 !important;
 	}
@@ -164,6 +195,10 @@ ul {
 }
 
 @media screen and (max-width: 480px) {
+	.post {
+		padding: 1.5em 1.5em 0.1em 1.5em;
+		margin: 0 0 2em 0;
+	}
 
 	.post_title{
 		font-size: 3vh !important;
