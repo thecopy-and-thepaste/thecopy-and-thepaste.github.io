@@ -11,14 +11,11 @@ class Post {
         this.postProvider.getPost(this.postID)
             .then((post) => {
 
-                console.log(post);
-
                 var mask_image = Math.floor(Math.random() * IMG_QTY) + 1
                 var img = post.postImage || '../../images/post_defaults/' + mask_image + '.png'
                 $(".mask_background").css("background-image", 'url(' + img + ')')
 
 
-                console.log(post);
                 var $post_header = $('.post_header')
                 // $post_header.css("background", "url(" + post.postImage + ") center ")
                 var $post = $(".post")
@@ -57,7 +54,7 @@ class Post {
                 window.location.replace("404.html")
             })
 
-        // callback()
+        onFinish()
     }
 }
 
@@ -79,9 +76,10 @@ class Post {
     // Hiding overlay
     $('#overlay').hide()
 
+    var tracker = new Tracker()
     var post = new Post(dictHash["post"])
 
     post.getPost(() => {
-
+        tracker.trackPost(post.postID)
     })
 })(jQuery)

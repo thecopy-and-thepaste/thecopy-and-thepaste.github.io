@@ -138,6 +138,8 @@ class Home {
     var tags = {}
     var tagsToShow = {}
     var home = new Home()
+    
+    new Tracker()
 
     if (hashes.length == 1) {
         var temp = hashes[0]
