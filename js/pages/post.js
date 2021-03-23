@@ -73,13 +73,29 @@ class Post {
             x => dictHash[x[0]] = x[1]
         )
 
-    // Hiding overlay
-    $('#overlay').hide()
 
     var tracker = new Tracker()
     var post = new Post(dictHash["post"])
-
     post.getPost(() => {
+        setTimeout(() => {
+            jQuery.ajax({
+                url: "https://polyfill.io/v3/polyfill.min.js?features=es6",
+                dataType: 'script',
+                async: true
+            });
+            jQuery.ajax({
+                url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+                dataType: 'script',
+                async: true
+            });
+
+            $('#overlay').hide()
+        }, 1000)
+
         tracker.trackPost(post.postID)
+
     })
+
+
+
 })(jQuery)
