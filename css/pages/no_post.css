@@ -1,0 +1,122 @@
+body, b {
+    color: white;
+}
+
+p {
+    margin: 0 0 1em 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li, ol li {
+    margin-left: 1.5em;
+    font-size: 0.9em;
+}
+
+
+content {
+    max-width: 95%;
+    margin: 1em auto;
+    position: relative;
+    display: block;
+}
+
+article h1, article h2, article h3 {
+    color: white;
+    padding-top: 0.5em;
+}
+
+article h1 {
+    font-size: 1.8em;
+}
+
+content h1 {
+    font-size: 1.6em;
+}
+
+content h2 {
+    font-size: 1.4em;
+}
+
+content h3 {
+    font-size: 1.2em;
+}
+
+
+
+.stage img {
+    margin: 0 auto;
+    display: block;
+    width: 50% !important;
+    height: auto !important;
+    padding: 1em 0 1em 0;
+}
+
+.config_section {
+    padding: 1em 0.5em 1em 0.5em;
+}
+
+.config_section>.content {
+    margin-left: 1em;
+    padding: 0.5em;
+}
+
+.chill {
+    background-color: black;
+    -webkit-transition: background-color 2000ms ease;
+    -moz-transition: background-color 2000ms ease;
+    -ms-transition: background-color 2000ms ease;
+    -o-transition: background-color 2000ms ease;
+    transition: background-color 2000ms ease;
+}
+
+.post {
+    background: black;
+    border: solid 1px rgba(160, 160, 160, 0.9);
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em;
+    left: 0;
+}
+
+.post>header {
+    width: 100%;
+    left: 0;
+}
+
+header>.title {
+    text-align: right;
+}
+
+@media screen and (max-width: 980px) {
+    .stage img {
+        width: 70% !important;
+        padding: 1em 0 1em 0;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    content h1 {
+        font-size: 1.4em;
+    }
+    
+    content h2 {
+        font-size: 1.2em;
+    }
+    
+    content h3 {
+        font-size: 1.1em;
+    }
+
+    .post {
+        border: solid 1px rgba(160, 160, 160, 0.9);
+        padding: 0.5em;
+    }
+
+    .stage img {
+        width: 100% !important;
+    }
+}

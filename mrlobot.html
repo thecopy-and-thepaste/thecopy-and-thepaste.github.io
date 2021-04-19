@@ -1,0 +1,371 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>thecopy and thepaste</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/control.css" />
+    <link rel="stylesheet" href="css/pages/no_post.css" />
+    <link rel="stylesheet" href="one-use/discordInvite.css" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+</head>
+
+<body class="single is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="index.html">TheCopy_and_ThePaste</a></h1>
+            <nav class="main">
+                <ul>
+                    <li class="menu">
+                        <a class="fa-bars" href="#menu">Menu</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+        <section id="menu">
+            <!-- Search -->
+            <!-- <section>
+				<form class="search" method="get" action="#">
+					<input type="text" name="query" placeholder="Search" />
+				</form>
+			</section> -->
+
+            <!-- Links -->
+            <section>
+                <ul class="links">
+                    <li>
+                        <a href="about.html">
+                            <h3>About</h3>
+                            <p>something about this</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mrlobot.html">
+                            <h3>Mr.Lobot Spreadsheets</h3>
+                            <p>Help page to setup Mr.Lobot Spreadsheets</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+        </section>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Post -->
+            <article class="post">
+                <header>
+                    <div class="title">
+                        <h1><a href="#">Mr.Lobot Spreadsheets</a></h1>
+                    </div>
+                </header>
+
+                <content>
+                    <div class="stage">
+                        <p>
+                            In the last few days, I've been wasting lots of time playing a game called SWGOH. When I
+                            started to play, I only cared about gathering some fragments of chars I liked, nothing else.
+                        </p>
+                        <p>
+                            Somehow it changes a lot, and it seems far more complex I imagined. Guilds have some kind of
+                            hierarchies; you need to climb in your shard, you have to collect fragments of units you
+                            don't even like. Our selfish lover.
+                        </p>
+
+                        <a>
+                            <img src="https://i.imgur.com/mrxbtIQ.gif">
+                        </a>
+                    </div>
+
+                    <hr>
+                    <div class="stage">
+                        <h1>TL;DR;</h1>
+
+                        <div class="config_section">
+                            <p>You can add the bot to your server using the following link:</p>
+
+                            <div id="container">
+                                <div id="inviteContainer">
+                                    <div class="logoContainer"><img class="logo"
+                                            src="https://cdn.worldvectorlogo.com/logos/discord.svg" /><img class="text"
+                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Discord_Color_Text_Logo.svg/2000px-Discord_Color_Text_Logo.svg.png" />
+                                    </div>
+                                    <div class="acceptContainer">
+                                        <form>
+                                            <h1>Mr.Lobot Spreadsheets</h1>
+                                            <a href="https://discord.com/api/oauth2/authorize?client_id=815741087913738240&permissions=8&scope=bot" class="acceptBtn">Add Bot</a>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div class="stage">
+                        <h1>The no Rose Tico club.</h1>
+
+                        <div>
+                            <p>
+                                One of the main complaints is the time we have to spend here.
+                            </p>
+                            <p>
+                                Then, I realize that the time I spend is nothing compared with the workload of officers
+                                or higher rank guildmates. So, I decided to waste more time on making a tool, so other
+                                people don't waste their time.
+                            </p>
+                            <p>
+                                <h3>So, what is this?</h3>
+                                Mr.Lobot Spreadsheets (still in development) is a simple tool to trace statistics of any
+                                guild and then produce a spreadsheet on CSV format you can download.
+                            </p>
+
+                            <p>
+                                The main use cases are addressed to:
+                            <ul>
+                                <li>trace your own guild progress</li>
+                                <li>trace another guild opponent in TW</li>
+                            </ul>
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="stage">
+                        <h1>Usage</h1>
+
+                        <div>
+                            <p>
+                                It works on 2 main stages:
+                            <ol>
+                                <li>Create or modify a spreadsheet template with the units you desire</li>
+                                <li>Report this spreadsheet with the stat of your interest</li>
+                            </ol>
+                            </p>
+
+                        </div>
+
+                        <h2> Commands</h2>
+
+                        <div class="config_section">
+                            <h3>Config</h3>
+                            <div class="content">
+                                <p><b>Config</b> options for the bot</p>
+                                <!-- HTML generated using hilite.me -->
+                                <div
+                                    style="background: #000000; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; text-align: justify">
+                                    <pre style="margin: 0; line-height: 125%"><span style="color: #3399cc">+</span><span style="color: #cccccc">mrlobot_config</span> <span style="color: #cccccc">option</span> <span style="color: #cccccc">value</span>
+        
+        <span style="color: #cccccc">Aliases</span><span style="color: #3399cc">:</span> <span style="color: #cccccc">[</span><span style="color: #3399cc">+</span><span style="color: #cccccc">config</span> <span style="color: #3399cc">+</span><span style="color: #cccccc">c]</span> 
+        <span style="color: #cccccc">where</span>: 
+            <span style="color: #00cd00">option</span><span style="color: #3399cc">:</span> <span style="color: #cccccc">Config</span> <span style="color: #cccccc">option,</span> <span style="color: #cccccc">possible</span> <span style="color: #cccccc">values</span> <span style="color: #cccccc">(guild).</span>
+            <span style="color: #cccccc">value</span>: <span style="color: #00cd00">Value</span> <span style="color: #cccccc">of</span> <span style="color: #cccccc">the</span> <span style="color: #cccccc">option</span>
+        </pre>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="config_section">
+                            <h3>Spreadsheet template</h3>
+                            <div class="content">
+                                <p><b>Adds</b> units to the spreadsheet template, it the spreadsheet does not exist,
+                                    creates
+                                    it.
+                                </p>
+                                <!-- HTML generated using hilite.me -->
+                                <div
+                                    style="background: #000000; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; text-align: justify">
+                                    <pre style="margin: 0; line-height: 125%"><span style="color: #3399cc">+</span><span style="color: #cccccc">mrlobot_addsheet</span> <span style="color: #cccccc">sheet_name</span> <span style="color: #cccccc">unit1,</span> <span style="color: #cccccc">unit2,</span> <span style="color: #cccccc; border: 1px solid #FF0000">…</span> 
+        
+        <span style="color: #cccccc">Aliases</span><span style="color: #3399cc">:</span> <span style="color: #cccccc">[</span><span style="color: #3399cc">+</span><span style="color: #cccccc">add</span> <span style="color: #3399cc">+</span><span style="color: #cccccc">a]</span> 
+        <span style="color: #cccccc">where</span>:
+            <span style="color: #00cd00">sheet_name</span><span style="color: #3399cc">:</span> <span style="color: #cccccc">Name</span> <span style="color: #cccccc">of</span> <span style="color: #cccccc">the</span> <span style="color: #cccccc">sheet</span> <span style="color: #cccccc">to</span> <span style="color: #cccccc">add</span> <span style="color: #cccccc">units,</span> <span style="color: #cdcd00">if</span> <span style="color: #cccccc">the</span> <span style="color: #cccccc">sheet</span> <span style="color: #cccccc">does</span> <span style="color: #cccccc">not</span> <span style="color: #cccccc">exists</span> <span style="color: #cccccc">creates</span> <span style="color: #cccccc">it</span>
+            <span style="color: #cccccc">chars</span>: <span style="color: #00cd00">comma</span> <span style="color: #cccccc">separated</span> <span style="color: #cccccc">units</span> <span style="color: #cccccc">names</span>
+        </pre>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="content">
+                                <p><b>Removes</b> the units to the spreadsheet template, if no unit is send deletes the
+                                    complete
+                                    spreadsheet.</p>
+                                <!-- HTML generated using hilite.me -->
+                                <div
+                                    style="background: #000000; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; text-align: justify">
+                                    <pre style="margin: 0; line-height: 125%"><span style="color: #3399cc">+</span><span style="color: #cccccc">mrlobot_deletesheet</span> <span style="color: #cccccc">sheet_name</span> <span style="color: #cccccc">unit1,</span> <span style="color: #cccccc">unit2,</span> <span style="color: #cccccc; border: 1px solid #FF0000">…</span> 
+        
+        <span style="color: #cccccc">Aliases</span><span style="color: #3399cc">:</span> <span style="color: #cccccc">[</span><span style="color: #3399cc">+</span><span style="color: #cdcd00">delete</span> <span style="color: #3399cc">+</span><span style="color: #cccccc">d]</span>
+        <span style="color: #cccccc">where</span>:
+            <span style="color: #00cd00">sheet_name</span><span style="color: #3399cc">:</span> <span style="color: #cccccc">Name</span> <span style="color: #cccccc">of</span> <span style="color: #cccccc">the</span> <span style="color: #cccccc">sheet</span> <span style="color: #cccccc">to</span> <span style="color: #cdcd00">delete</span> <span style="color: #cccccc">or</span> <span style="color: #cdcd00">delete</span> <span style="color: #cccccc">units</span>
+            <span style="color: #cccccc">chars(Optional)</span><span style="color: #3399cc">:</span> <span style="color: #cccccc">comma</span> <span style="color: #cccccc">separated</span> <span style="color: #cccccc">units</span> <span style="color: #cccccc">names,</span> 
+                <span style="color: #cdcd00">if</span> <span style="color: #cccccc">empty,</span> <span style="color: #cccccc">deletes</span> <span style="color: #cccccc">the</span> <span style="color: #cccccc">complete</span> <span style="color: #cccccc">spreadsheet</span>
+        </pre>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="config_section">
+                            <h3>Spreadsheet report</h3>
+                            <div class="content">
+                                <p><b>Reports</b> the selected stat for the spreadsheet template.</p>
+                                <p>
+                                    Available stats:
+                                <ul>
+                                    <li>gp: Galactic Power</li>
+                                    <li>gear: Gear Level</li>
+                                    <li>relic: Relic Level</li>
+                                </ul>
+                                </p>
+                                <!-- HTML generated using hilite.me -->
+                                <div
+                                    style="background: #000000; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; text-align: justify">
+                                    <pre style="margin: 0; line-height: 125%"><span style="color: #3399cc">+</span><span style="color: #cccccc">mrlobot_reportsheet</span> <span style="color: #cccccc">sheet_name</span> <span style="color: #cccccc">to_report</span>
+            
+            <span style="color: #cccccc">Aliases</span><span style="color: #3399cc">:</span> <span style="color: #cccccc">[</span><span style="color: #3399cc">+</span><span style="color: #cccccc">report</span> <span style="color: #3399cc">+</span><span style="color: #cccccc">r]</span>
+            
+            <span style="color: #cccccc">where</span>:
+                <span style="color: #00cd00">sheet_name</span><span style="color: #3399cc">:</span> <span style="color: #cccccc">Name</span> <span style="color: #cccccc">of</span> <span style="color: #cccccc">the</span> <span style="color: #cccccc">sheet</span> <span style="color: #cccccc">to</span> <span style="color: #cccccc">report</span>
+                <span style="color: #cccccc">to_report</span>: <span style="color: #00cd00">Stat</span> <span style="color: #cccccc">to</span> <span style="color: #cccccc">report</span> 
+                    <span style="color: #cccccc">(gp</span><span style="color: #3399cc">-</span><span style="color: #cccccc">Galactic</span> <span style="color: #cccccc">Power,</span> <span style="color: #cccccc">gear</span><span style="color: #3399cc">-</span><span style="color: #cccccc">Gear</span> <span style="color: #cccccc">Level,</span> <span style="color: #cccccc">relic</span><span style="color: #3399cc">-</span><span style="color: #cccccc">Relic</span> <span style="color: #cccccc">Level)</span>
+            </pre>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="config_section">
+                            <h3>Misc</h3>
+
+                            <div class="content">
+                                <p>
+                                    <b>Shows</b> the spreadsheets that starts with start, if start=* shows all the
+                                    spreadsheets.
+                                </p>
+                                <!-- HTML generated using hilite.me -->
+                                <div
+                                    style="background: #000000; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; text-align: justify">
+                                    <pre style="margin: 0; line-height: 125%"><span style="color: #3399cc">+</span><span style="color: #cccccc">mrlobot_showsheet</span> <span style="color: #cccccc">start</span>
+        
+        <span style="color: #cccccc">Aliases</span><span style="color: #3399cc">:</span><span style="color: #cccccc">[</span><span style="color: #3399cc">+</span><span style="color: #cccccc">show</span> <span style="color: #3399cc">+</span><span style="color: #cccccc">s]</span> 
+        <span style="color: #cccccc">where</span>:
+            <span style="color: #00cd00">start</span><span style="color: #3399cc">:</span> <span style="color: #cccccc">Start</span> <span style="color: #cccccc">expression</span> <span style="color: #cccccc">to</span> <span style="color: #cccccc">search</span> <span style="color: #cccccc">(wildcard</span> <span style="color: #3399cc">*</span> <span style="color: #cccccc">to</span> <span style="color: #cccccc">get</span> <span style="color: #cccccc">all</span> <span style="color: #cccccc">sheets)</span>
+        </pre>
+                                </div>
+
+
+                            </div>
+                            <hr>
+                            <div class="content">
+                                <p><b>Lists</b> the available units, and their aliases, that can be added to the
+                                    spreadsheet
+                                    templates.
+                                </p>
+                                <!-- HTML generated using hilite.me -->
+                                <div
+                                    style="background: #000000; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; text-align: justify">
+                                    <pre style="margin: 0; line-height: 125%"><span style="color: #3399cc">+</span><span style="color: #cccccc">mrlobot_listchars</span> <span style="color: #cccccc">start</span>
+        
+        <span style="color: #cccccc">Aliases</span><span style="color: #3399cc">:</span><span style="color: #cccccc">[</span><span style="color: #3399cc">+</span><span style="color: #cccccc">list</span> <span style="color: #3399cc">+</span><span style="color: #cccccc">l]</span>
+        <span style="color: #cccccc">where</span>:
+            <span style="color: #00cd00">start</span><span style="color: #cccccc">(Optional)</span><span style="color: #3399cc">:</span> <span style="color: #cccccc">Start</span> <span style="color: #cccccc">expression</span> <span style="color: #cccccc">to</span> <span style="color: #cccccc">search</span> <span style="color: #cccccc">available</span> <span style="color: #cccccc">units,</span> 
+                <span style="color: #cdcd00">if</span> <span style="color: #cccccc">empty,</span> <span style="color: #cccccc">lists</span> <span style="color: #cccccc">all</span> <span style="color: #cccccc">units.</span>
+        </pre>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="stage">
+                        <h1>Workflow</h1>
+
+                        <div class="config_section">
+                            An example of a common workflow is:
+
+                            <ol>
+                                <li>
+                                    <b>Config</b> your guild with <b>+config</b>
+
+                                    <!-- HTML generated using hilite.me -->
+                                    <div
+                                        style="background: #000000; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; text-align: justify">
+                                        <pre style="margin: 0; line-height: 125%"><span style="color: #3399cc">+</span><span style="color: #cccccc">c</span> <span style="color: #cccccc">guild</span> <span style="color: #cccccc">your_guild_id</span>
+</pre>
+                                    </div>
+
+                                    <br>
+                                    <p>You will see a message like this:</p>
+                                    <a>
+                                        <img src="https://i.imgur.com/NOGL93d.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <b>Add/remove</b> units to create the templates you want to trace, with <b>+add</b>,
+                                    <b>+delete</b>
+
+                                    <!-- HTML generated using hilite.me -->
+                                    <div
+                                        style="background: #000000; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; text-align: justify">
+                                        <pre style="margin: 0; line-height: 125%"><span style="color: #3399cc">+</span><span style="color: #cccccc">a</span> <span style="color: #cccccc">sheet_name</span> <span style="color: #cccccc">unit1,</span> <span style="color: #cccccc">unit2,</span> <span style="color: #cccccc">unit3,</span>
+<span style="color: #3399cc">+</span><span style="color: #cccccc">d</span> <span style="color: #cccccc">sheet_name</span> <span style="color: #cccccc">unit1,</span> <span style="color: #cccccc">unit2,</span> <span style="color: #cccccc">unit3</span>
+</pre>
+                                    </div>
+
+                                    <br>
+                                    <p>A message, like the following, will appear:</p>
+                                    <a>
+                                        <img src="https://i.imgur.com/NdFGNWv.png">
+                                    </a>
+                                    <p>That means, later you will create a spreadsheet report with these units.</p>
+                                </li>
+                                <li>
+                                    <b>Report</b> the available stats of your complete (<b>or another one</b>) guild,
+                                    with <b>+report</b>
+
+                                    <p>Example:</p>
+                                    <a>
+                                        <img src="https://i.imgur.com/aqc1oHn.png">
+                                    </a>
+                                    <p>This produce a spreadsheet of gear levels of all units in the guild. As seen:</p>
+                                    <a>
+                                        <img src="https://i.imgur.com/SqjAOVq.png">
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
+
+                    </div>
+
+                </content>
+            </article>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- <script src="providers/config.js"></script> -->
+
+    <script src="js/browser.min.js"></script>
+    <script src="js/breakpoints.min.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/providers/tracker.js"></script>
+    <script src="js/pages/mrlobot.js"></script>
+
+</body>
+
+</html>
