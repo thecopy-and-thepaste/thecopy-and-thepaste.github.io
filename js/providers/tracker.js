@@ -1,7 +1,7 @@
 class Tracker {
     constructor(timespan = 30) {
         this.myID = this.getUsr()
-        this.url = ""
+        this.url = "https://yovzfqurki.execute-api.us-east-1.amazonaws.com/beta/"
         this.timespan = timespan
     }
 
